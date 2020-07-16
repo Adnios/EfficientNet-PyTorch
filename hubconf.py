@@ -40,4 +40,5 @@ def _create_model_fn(model_name):
     return _model_fn
 
 for model_name in ['efficientnet_b' + str(i) for i in range(9)]:
+    print(model_name)
     locals()[model_name] = _create_model_fn(model_name)
